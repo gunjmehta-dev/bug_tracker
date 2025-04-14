@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BugTracker Pro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🐞 BugTracker Pro</h1>
+    <p class="subtitle">Track, resolve, and manage bugs with ease</p>
+  </header>
+
+  <main>
+    <section class="add-bug-section">
+      <input type="text" id="bugInput" placeholder="Describe your bug..." />
+      <button onclick="addBug()">➕ Add Bug</button>
+    </section>
+
+    <section class="filters">
+      <button onclick="filterBugs('all')">All</button>
+      <button onclick="filterBugs('open')">Unresolved</button>
+      <button onclick="filterBugs('resolved')">Resolved</button>
+    </section>
+
+    <ul id="bugList"></ul>
+  </main>
+
+  <footer>
+    <p>© 2025 BugTracker Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
