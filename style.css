@@ -1,0 +1,116 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #0f0f0f;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+main {
+  padding: 1rem 2rem;
+  flex: 1;
+}
+
+.add-bug-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input#bugInput {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: white;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  background: #4ade80;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #22c55e;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  background: #3b3b3b;
+  color: #f5f5f5;
+}
+
+.filters button:hover {
+  background: #555;
+}
+
+#bugList {
+  list-style: none;
+  padding: 0;
+}
+
+.bug-item {
+  background: #1f1f1f;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bug-text {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.bug-resolved {
+  text-decoration: line-through;
+  color: #4ade80;
+}
+
+.bug-actions button {
+  margin-left: 0.5rem;
+  background: #2a2a2a;
+  color: #ccc;
+}
+
+.bug-actions button:hover {
+  background: #444;
+  color: white;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
